@@ -1,56 +1,36 @@
 import React from 'react';
+import './styles.css';
 
 export default function Home() {
   return (
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900">
-        <div className="container mx-auto p-4 rounded-lg shadow-lg bg-white dark:bg-gray-700">
-          <h1 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">
-            My Linktree
-          </h1>
-          <ul className="space-y-4">
-            <li>
-              <a
-                  href="https://www.FEDS201.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-4 py-2 text-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
-              >
-                FEDS Website
-              </a>
-            </li>
-            {/* Add more links here, following the same pattern */}
-            <li>
-              <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-4 py-2 text-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
-              >
-                Link 2
-              </a>
-            </li>
-            <li>
-              <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-4 py-2 text-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
-              >
-                Link 3
-              </a>
-            </li>
-            <li>
-              <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-4 py-2 text-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
-              >
-                Link 4
-              </a>
-            </li>
-          </ul>
-        </div>
-      </main>
+    <div className="linktree-card">
+      <div className="linktree-header">
+        <img src="https://avatars.githubusercontent.com/u/6892840?s=200&v=4" alt="Your Logo" />
+        <h2>FEDS201</h2>
+      </div>
+      <div className="linktree-links">
+        <a href="https://feds201.com" className="linktree-link">
+          <div className="linktree-link-content">
+            <img src='https://i.imgur.com/d0RG1Co.png' alt="Link 1" />
+            <h3>FEDS Website</h3>
+            <p>Home to all FEDS</p>
+          </div>
+        </a>
+        <a href="" className="linktree-link">
+          <div className="linktree-link-content">
+            <img src="https://via.placeholder.com/150" alt="Link 2" />
+            <h3>Impact Video</h3>
+            <p>Year 2023-24 Impact Video</p>
+          </div>
+        </a>
+        <a href="https://example.com" className="linktree-link">
+          <div className="linktree-link-content">
+            <img src="https://via.placeholder.com/150" alt="Link 3" />
+            <h3>Venmo Donations</h3>
+            <p>Help Us Continue our Mission</p>
+          </div>
+        </a>
+      </div>
+    </div>
   );
 }
