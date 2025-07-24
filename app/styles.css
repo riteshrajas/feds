@@ -2,6 +2,22 @@ body {
     background: url('../public/background.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
   }
   
   .linktree-card {
@@ -9,25 +25,26 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    padding:20px;
-    align-self: center;
-    align-content: center;
-    align-self: center;
-    align-items: center;
-    margin: 60px 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
     transition: all 0.3s ease-in-out;
   }
   
   .linktree-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
   }
   
   .linktree-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     background-color: none;
+    flex-wrap: wrap;
+    text-align: center;
   }
   
   .linktree-header img {
@@ -35,13 +52,15 @@ body {
     height: 80px;
     border-radius: 50%;
     margin-right: 15px;
+    flex-shrink: 0;
     /* border: 2px solid rgba(255, 255, 255, 0.5); */
   }
 
   .linktree-header h2 {
-    font-size: xx-large;
+    font-size: 2rem;
     font-weight: 700;
-
+    margin: 0;
+    color: white;
   }
 
   .linktree-link-content iframe:hover {
@@ -51,7 +70,7 @@ body {
 
   .linktree-link-content iframe {
     width: 100%;
-    height: 100%;
+    height: 250px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -108,3 +127,221 @@ body {
     text-align: center;
     margin: 0;
   }
+
+  /* Social Media Section */
+  .social-media-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .social-media-section h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  .social-media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 100px;
+  }
+
+  .social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  /* Platform-specific colors */
+  .social-button.tiktok:hover {
+    background: rgba(254, 44, 85, 0.2);
+    border-color: rgba(254, 44, 85, 0.5);
+  }
+
+  .social-button.instagram:hover {
+    background: linear-gradient(45deg, rgba(225, 48, 108, 0.2), rgba(255, 204, 120, 0.2));
+    border-color: rgba(225, 48, 108, 0.5);
+  }
+
+  .social-button.facebook:hover {
+    background: rgba(24, 119, 242, 0.2);
+    border-color: rgba(24, 119, 242, 0.5);
+  }
+
+/* Mobile devices (phones) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 10px;
+    min-height: 100vh;
+  }
+
+  .linktree-card {
+    margin: 0;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .linktree-header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .linktree-header img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .linktree-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .linktree-links {
+    gap: 15px;
+  }
+
+  .linktree-link {
+    padding: 12px;
+  }
+
+  .linktree-link-content iframe {
+    height: 200px;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    margin: 8px 0 4px;
+  }
+
+  p {
+    font-size: 0.85em;
+  }
+
+  .social-media-section {
+    margin-top: 20px;
+  }
+
+  .social-media-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  .social-media-buttons {
+    gap: 10px;
+  }
+
+  .social-button {
+    padding: 10px 15px;
+    font-size: 0.8em;
+    min-width: 80px;
+  }
+
+  .social-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Disable hover effects on mobile */
+  .linktree-card:hover {
+    transform: none;
+  }
+
+  .linktree-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .linktree-link-content iframe:hover {
+    transform: none;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .linktree-card {
+    max-width: 600px;
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .linktree-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .linktree-link-content iframe {
+    height: 280px;
+  }
+
+  .social-media-section h3 {
+    font-size: 1.3em;
+  }
+
+  .social-button {
+    padding: 11px 18px;
+    font-size: 0.85em;
+    min-width: 90px;
+  }
+
+  .social-icon {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+/* Laptops and larger screens */
+@media screen and (min-width: 769px) {
+  .linktree-card {
+    max-width: 500px;
+    margin: 40px auto;
+  }
+
+  .linktree-header h2 {
+    font-size: 2rem;
+  }
+
+  .linktree-link-content iframe {
+    height: 250px;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  .linktree-card {
+    max-width: 550px;
+  }
+
+  .linktree-link-content iframe {
+    height: 300px;
+  }
+}

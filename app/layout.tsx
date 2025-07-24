@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "FEDS Linktree",
   description: "FRC FEDS201's Linktree",
+  viewport: "width=device-width, initial-scale=1",
   // icons: "6892840.ico"
 };
 
