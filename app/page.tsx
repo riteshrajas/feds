@@ -33,7 +33,7 @@ export default function Home() {
           </a>
           <a href="https://example.com" className="linktree-link">
             <div className="linktree-link-content">
-              <img src="https://drive.google.com/file/d/1gZPcXCTmW8U_cOOyq3WiqB_Ti8Rf511P/preview?usp=sharing" alt="Link 3" />
+              <img src="https://imgur.com/a/t3MAsrP" alt="Link 3" />
               <h3>Venmo Donations</h3>
               <p>Help Us Continue our Mission</p>
             </div>
