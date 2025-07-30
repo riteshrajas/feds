@@ -67,6 +67,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-
-npm run dev);
-
+);
+}
