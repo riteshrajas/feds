@@ -31,9 +31,9 @@ export default function Home() {
               <p>Documents for all incoming FEDS</p>
             </div>
           </a>
-          <a href="https://example.com" className="linktree-link">
+          <a href="https://account.venmo.com/u/stemunited201" className="linktree-link">
             <div className="linktree-link-content">
-              <img src="https://imgur.com/a/t3MAsrP" alt="Link 3" />
+              <img src="https://i.imgur.com/5N5IAc0.png" alt="Link 3" />
               <h3>Venmo Donations</h3>
               <p>Help Us Continue our Mission</p>
             </div>
